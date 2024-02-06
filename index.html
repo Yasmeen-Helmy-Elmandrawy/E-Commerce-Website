@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>E-Commerce</title>
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- header section starts -->
+      <header class="header" id="header">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand position-relative" href="#"><img src="images/noon-logo.svg" alt="logo"></a>
+              <button id="cart" class="cart me-lg-5 position-relative text-center fas fa-shopping-cart fs-3 order-lg-last border-0 bg-transparent" aria-current="page" href="index.html" >
+                <p onclick="showItems('e')" id="productsNum" class="productsNum position-absolute text-white end-0 fs-6 rounded-circle">0</p>
+                <div id="items-con" class="items-con px-3 flex-column position-absolute bg-white px-2 py-3 rounded"></div>
+              </button>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item px-3">
+                    <a class="nav-link active select" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="#products">Products</a>
+                  </li> 
+                  <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item px-3" id="login">
+                    <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item px-3" id="register">
+                    <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                  </li>
+                  <li class="nav-item px-3 dropdown" id="user">
+                    <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu w-100">
+                      <li class="" >
+                        <a class="dropdown-item fs-6 fw-bold" href="profile.html">Profile</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="" >
+                        <a class="dropdown-item fs-6 fw-bold" href="cartItems.html">View Cart</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class=" " id="logout" >
+                        <a class="dropdown-item fs-6 fw-bold" id="logoutLink" href="index.html">Log out</a>
+                      </li>   
+                    </ul>
+                  </li>
+                </ul>    
+              </div>
+            </div>
+          </nav>
+      </header>
+      <!-- header section ends -->
+      <!-- home section starts -->
+      <main id="home" class="home w-100"></main>
+          <img src="images/bar.avif" alt="bar-image">
+          <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img src="images/slider-1.avif" class="d-block w-100" alt="slider-1">
+              </div>
+              <div class="carousel-item">
+              <img src="images/slider-2.avif" class="d-block w-100" alt="slider-2">
+              </div>
+              <div class="carousel-item">
+              <img src="images/slider-3.avif" class="d-block w-100" alt="slider-3">
+              </div>
+              <div class="carousel-item">
+              <img src="images/slider-4.avif" class="d-block w-100" alt="slider-4">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+          <img src="images/noon-apply.gif" alt="noon-apply">
+      </main>
+      <!-- home section ends -->
+      <!-- about section starts -->
+      <section id="about" class="about">
+          <div class="container">
+            <h2 class="special-heading">About</h2>
+            <div class="about-content">
+              <div class="image">
+                <img src="images/about.jpg" alt="about-noon" draggable="false" />
+              </div>
+              <div class="text">
+                <p>
+                  noon is an easy and secure platform for people to discover and shop the products they love.
+                  With fast delivery, easy payment and return options and a 24-hour customer service, find everything you need at competitive prices.
+                  All our products are backed by our authenticity promise and noon warranty.
+                  Superior online shopping in Egypt. Offering a world-class customer experience,
+                  noon is the top choice for online shopping in Egypt.
+                  Noon offers a homegrown online marketplace. It connects its platform users to a variety of products,
+                  improved services, and start-to-end customer care. Noon's products include noon food, noon grocery,
+                  noon payments, noon VIP, and more. The company was founded in 2016 and is based in Dubai, United Arab Emirates.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- about section ends -->
+      <!-- products section starts -->
+      <section id="products" class="products">
+          <div class="container">
+              <h2 class="special-heading">Products</h2>
+              <div class="row gy-4 mt-3 justify-content-center">
+                  <div class="col-md-3">
+                      <label class="fw-bold d-block text-center" for="">Search with Name</label>
+                      <input type="text" style="border: 2px solid rgb(60, 60, 60);" class=" w-100 mt-2 px-2 py-1" name=""
+                          id="Pname" placeholder="Product name">
+                  </div>
+                  <div class="col-md-4">
+                      <label class="fw-bold d-block text-center" for="">Search with Catagory</label>
+                      <input type="text" style="border: 2px solid rgb(60, 60, 60);" class=" w-100  mt-2 px-2 py-1" name=""
+                          id="Pcatagory" placeholder="Product catagory">
+                  </div>
+                  <div class="col-md-3">
+                      <label class="fw-bold d-block text-center" for="">Search with Budget</label>
+                      <input type="number" style="border: 2px solid rgb(60, 60, 60);" class=" w-100  mt-2 px-2 py-1" name=""
+                          id="budget" placeholder="Your budget">
+                  </div>
+              </div>
+              <div class="row mt-3 gy-5 justify-content-center" id="productsContainer">
+    
+              </div>
+          </div>
+      </section>
+      <!-- products section ends -->
+      <section id="contact" class="contact mt-5">
+          <div class="container">
+              <h2 class="special-heading">Contact Us</h2>
+              <div class="row my-5">
+                  <div class="col-lg-4 px-0">
+                      <img src="images/model.jpg" loading="lazy" class="img-fluid w-100 h-100" alt="">
+                  </div>
+                      <div class="col-lg-8 p-5 bg-secondary bg-opacity-10 ">
+                          <div class="row gy-3 align-items-center">
+                              <div class="col-lg-6 ">
+                                  <div>
+                                      <label for="fn" class="pb-2 " style="font-weight: 500;">First Name</label>
+                                      <input id="fn" type="text" class="w-100 p-2 border-1 border-secondary border-opacity-25" placeholder="Enter your first name">
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div >
+                                      <label for="ln" class="pb-2 " style="font-weight: 500;">Last Name</label>
+                                      <input id="ln" type="text" class="w-100 p-2 border-1 border-secondary border-opacity-25" placeholder="Enter your last name">
+                                  </div>
+                              </div>     
+                              <div class="col-lg-6">
+                                  <div >
+                                      <label for="em" class="pb-2 " style="font-weight: 500;">Email</label>
+                                      <input id="em" type="email" class="w-100 p-2 border-1 border-secondary border-opacity-25" placeholder="Enter your email">
+                                  </div>
+                              </div>     
+                              <div class="col-lg-6">
+                                  <div >
+                                      <label for="sub" class="pb-2 " style="font-weight: 500;">Subject</label>
+                                      <input id="sub" type="text" class="w-100 p-2 border-1 border-secondary border-opacity-25" placeholder="Enter the subject">
+                                  </div>
+                              </div>     
+                              <div class="col-12">
+                                  <div >
+                                      <label for="mes" class="pb-2 " style="font-weight: 500;">Message</label>
+                                      <textarea name="mes" id="" cols="30" rows="6"class="w-100 p-2 border-1 border-secondary border-opacity-25" placeholder="Write your notes or questions here..." ></textarea>
+                                  </div>
+                              </div>   
+                          </div>
+                          <button class="btn btn4 border-black fw-bold rounded-0 border-2 px-4 my-3 d-block m-auto">Send Message</button>  
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- footer section starts -->
+      <footer class = "footer">
+          <div class = "bg-black py-5">
+            <div class = "container-lg">
+              <div class = "row text-white gy-5">
+                <div class = "footer-item col-lg-3 col-md-6 ">
+                  <img src = "images/noon-logo.svg" class = "w-50" alt = "logo">
+                  <p class = "info-noon pt-2 opacity-75">Offering all the products your home needs, the noon home goods store in Egypt has carefully curated a range made to make your house feel like home.</p>
+                  <a href = "https://www.facebook.com/noon/" ><i class = "icon fab fa-facebook-square"></i></a>
+                  <a href = "https://twitter.com/noon/" ><i class = "p-2 icon fab fa-twitter"></i></a>
+                  <a href = "https://www.instagram.com/noon/" ><i class = "p-2 icon fab fa-instagram"></i></a>
+                  <a href = "https://www.linkedin.com/company/nooncom/" ><i class = "p-2 icon fab fa-linkedin-in"></i></a>
+                </div>
+                <div class = "offers-item col-lg-2 col-6">
+                  <h4 class = "fw-bold">Offers</h4>
+                  <p class = "text opacity-75 pt-4 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Proberties</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Agents</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Locations</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Clients Support</p>
+                </div>
+                <div class = "company-item col-lg-2 col-6">
+                  <h4 class = "fw-bold">Company</h4>
+                  <p class = "text opacity-75 pt-4 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Company</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> About</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Blog</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Contact Us</p>
+                </div>
+                <div class = "links col-lg-2 col-6">
+                  <h4 class = "fw-bold">Quick Links</h4>
+                  <p class = "text opacity-75 pt-4 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Terms</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> User's Guide</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Support Center</p>
+                  <p class = "text opacity-75 icon-right"><i class = "fas fa-angle-right fa-fw"></i> Press Info</p>
+                </div>
+                <div class = "question col-lg-3 col-6">
+                  <h4 class = "fw-bold">Have a Question?</h4>
+                    <div class = "d-flex gap-3 pt-4">
+                      <i class = "fas fa-map icon-q"></i>
+                      <p class = "opacity-75"> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class = "d-flex gap-3">
+                      <i class = "fas fa-phone-alt fa-fw icon-q"></i>
+                      <p class = "opacity-75"> 16358</p>
+                    </div>
+                    <div class = "d-flex gap-3">
+                      <i class = "fas fa-envelope fa-fw icon-q"></i>
+                      <p class = "opacity-75"> egypt@noon.com</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+      <!-- footer section ends -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
